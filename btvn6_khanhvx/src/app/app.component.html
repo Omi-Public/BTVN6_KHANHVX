@@ -1,0 +1,25 @@
+<style>
+  .navigate-bar ul{
+    display: flex;
+    list-style: none !important;
+  }
+  .btn{
+    margin-left: 8px;
+    margin-right: 8px;
+  }
+</style>
+
+<div class="user-component">
+  <div>{{title}}</div>
+  <div class="navigate-bar">
+    <ul>
+      <li><button class="btn" (click)="goToLoginPage()">Login</button></li>
+      <li><button class="btn" (click)="goToRegisterPage()">Register</button></li>
+      <li><button class="btn" (click)="goToDashboardPage()">Dashboard</button></li>
+    </ul>
+  </div>
+</div>
+
+<app-login *ngIf="loginOn"></app-login>
+<app-dashboard *ngIf="dashboardOn"></app-dashboard>
+<app-register *ngIf="registerOn"></app-register>

@@ -1,0 +1,26 @@
+<div>
+    <div class="rowInput">
+        <div class="label"><label for="username" style="width: 200px;">Username: </label></div>
+        <input type="text" [(ngModel)]="username">
+    </div>
+    <div class="rowInput">
+        <div class="label"><label for="password" style="width: 200px;">Password: </label></div>
+        <input type="text" [(ngModel)]="password">
+    </div>
+    <div class="rowInput">
+        <div class="label"><label for="age" style="width: 200px;">Age: </label></div>
+        <input type="text" [(ngModel)]="age">
+    </div>
+    <div class="rowInput">
+        <div class="label"><label for="date_of_birth" style="width: 200px;">Date of birth: </label></div>
+        <input type="text" [(ngModel)]="date_of_birth">
+    </div>
+    <div class="rowInput">
+        <div class="label"><label for="country" style="width: 200px;">Country: </label></div>
+        <input type="text" [(ngModel)]="country">
+    </div>
+    <div>
+        <button (click)="register()">Login</button>
+    </div>
+</div>
+<p>{{resultRegister}}</p>
