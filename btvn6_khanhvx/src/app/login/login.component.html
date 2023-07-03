@@ -1,4 +1,5 @@
 <div>
+    <p><b>Login</b></p>
     <div class="rowInput">
         <div class="label"><label for="username" style="width: 200px;">Username: </label></div>
         <input type="text" [(ngModel)]="username">
@@ -7,7 +8,7 @@
         <div class="label"><label for="password" style="width: 200px;">Password: </label></div>
         <input type="password" [(ngModel)]="password">
     </div>
-    <div>
+    <div class="rowInput">
         <button (click)="login()">Login</button>
     </div>
 </div>

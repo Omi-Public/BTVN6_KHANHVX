@@ -1,5 +1,6 @@
 .rowInput{
     display: flex;
+    padding: 8px 10px;
 }
 
 .label{
